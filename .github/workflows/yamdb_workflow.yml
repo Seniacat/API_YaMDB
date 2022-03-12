@@ -1,8 +1,6 @@
-name: yamdb workflow
+name: yamdb_workflow
 
-on:
-  push:
-    branches: [main]
+on: [push]
 
 jobs:
   tests:
@@ -67,4 +65,5 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: ${{ github.workflow }} успешно выполнен! 
+        message: ${{ github.workflow }} succeed!
+
