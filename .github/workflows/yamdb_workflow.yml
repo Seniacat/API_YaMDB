@@ -27,9 +27,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: tests
     steps:
-      - name: Change directory
-      run: |
-        cd api_yamdb/
       - name: Check out the repo
         uses: actions/checkout@v2 
       - name: Set up Docker Buildx
