@@ -1,9 +1,6 @@
-# yamdb_final
-
-![yamdb_workflow](https://github.com/Seniacat/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
-
 
 # API_YaMDB
+![yamdb_workflow](https://github.com/Seniacat/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Описание
 Проект сервиса API для YaMDB - социальной сети, которая собирает отзывы (Review) и оценки пользователей
