@@ -33,15 +33,17 @@
 Клонируйте репозиторий и перейдите в него в командной строке.
 Создайте и активируйте виртуальное окружение:
 ```
-git clone https://github.com/Seniacat/api_yamdb.git
-cd yamdb_final
+git clone https://github.com/Seniacat/API_YaMDB.git
+cd API_YaMDB/
 ```
+Должен быть свободен порт 8000. PostgreSQL поднимается на 5432 порту, он тоже должен быть свободен.
 Cоздать и открыть файл .env с переменными окружения:
 ```
 cd infra
 touch .env
 ```
-Заполнить .env файл с переменными окружения по примеру (SECRET_KEY см. в файле settnigs.py)
+Заполнить .env файл с переменными окружения по примеру (SECRET_KEY см. в файле settings.py). 
+Необходимые для работы проекта переменные окружения можно найти в файле .env.example в текущей директории:
 ```
 echo DB_ENGINE=django.db.backends.postgresql >> .env
 
@@ -57,7 +59,7 @@ echo DB_PORT=5432  >> .env
 
 echo SECRET_KEY=************ >> .env
 ```
-Установить и запустить приложения в контейнерах (образ для контейнера web загружактся из DockerHub):
+Установить и запустить приложения в контейнерах (образ для контейнера web загружается из DockerHub):
 ```
 docker-compose up -d
 ```
