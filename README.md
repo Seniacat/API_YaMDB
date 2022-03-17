@@ -20,7 +20,7 @@
 - Python 3.7+
 - Docker
 - Works on Linux, Windows, macOS
-- 
+
 ### Стек технологий:
 - Python 3.8
 - Django 3.2
